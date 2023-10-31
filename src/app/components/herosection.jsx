@@ -9,7 +9,7 @@ import ParticlesContainer from "./particles";
 export default function HeroSection() {
   return (
     <section className="lg:py-16">
-      <ParticlesContainer/>
+      <ParticlesContainer />
       <div className="grid grid-cols-1 sm:grid-cols-12 relative">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -29,8 +29,6 @@ export default function HeroSection() {
                 "Web Developer",
                 1000,
                 "a Gamer",
-                1000,
-                "UI/UX Designer",
                 1000,
               ]}
               wrapper="span"
