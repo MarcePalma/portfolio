@@ -232,7 +232,7 @@ export default function AboutSection() {
           <p className="text-base lg:text-lg">
             I&apos;m a passionate and creative 21-year-old web developer. My approach is simple: to turn ideas into digital experiences. I constantly seek exciting challenges.
 
-            I love creating elegant and functional websites and applications that enhance people's lives. I believe that technology has the power to change the world, and I&apos;m always eager to learn new tools and technologies to stay up-to-date.
+            I love creating elegant and functional websites and applications that enhance people&apos;s lives. I believe that technology has the power to change the world, and I&apos;m always eager to learn new tools and technologies to stay up-to-date.
             <br />
             I&apos;m excited about what the future holds and I&apos;m always open to new opportunities and collaborations.
 
