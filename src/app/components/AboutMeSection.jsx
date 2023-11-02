@@ -3,8 +3,7 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 import SkillItem from "./SkillItem";
-import ParticlesContainer from "./particles";
-
+import StarsParticles from "./Particles/StarsParticles";
 const TAB_DATA = [
   {
     title: "Skills",
@@ -219,11 +218,10 @@ export default function AboutSection() {
 
   return (
     <section className="text-white relative" id="about">
-      <ParticlesContainer/>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 z-10">
         <Image src="/images/about-section.webp" width={500} height={500} alt="landscape image" />
-
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+
           <h2 className="text-4xl font-bold text-white mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 z-index-100">
               About Me

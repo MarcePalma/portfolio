@@ -1,9 +1,10 @@
+"use client"
 import React from 'react'
 import { Particles } from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import { useCallback } from 'react'
 
-export default function ParticlesContainer() {
+export function LinkParticles() {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine)
   }, []);
@@ -12,11 +13,12 @@ export default function ParticlesContainer() {
 
   return (
     <Particles
-      className='h-full w-full'
+      className='h-full w-full absolute translate-z-0'
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
+        fullScreen: { enable: false },
         background: {
           color: {
             value: "",
@@ -26,7 +28,7 @@ export default function ParticlesContainer() {
         interactivity: {
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: "push",
             },
             onHover: {
@@ -37,10 +39,10 @@ export default function ParticlesContainer() {
           },
           modes: {
             push: {
-              quantity: 4,
+              quantity: 90,
             },
             repulse: {
-              distance: 100,
+              distance: 200,
               duration: 0.4,
             },
           },
@@ -51,10 +53,13 @@ export default function ParticlesContainer() {
           },
           links: {
             color: "#ffffff",
-            distance: 100,
+            distance: 150,
             enable: true,
             opacity: 0.5,
             width: 1,
+          },
+          collisions: {
+            enable: true,
           },
           move: {
             direction: "none",
@@ -63,15 +68,15 @@ export default function ParticlesContainer() {
               default: "bounce",
             },
             random: false,
-            speed: 3,
+            speed: 1,
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 600,
+              area: 800,
             },
-            value: 90,
+            value: 80,
           },
           opacity: {
             value: 0.5,
@@ -88,3 +93,5 @@ export default function ParticlesContainer() {
     />
   );
 };
+
+

@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -9,8 +10,7 @@ export default function Footer() {
                     href={"/"}
                     className="text-2xl md:text-5xl"
                 >
-                    <img
-                        width={70}
+                    <Image width={70}
                         height={70}
                         src="/images/logo.png"
                         alt="Logo Image" />
