@@ -230,13 +230,14 @@ export default function AboutSection() {
             </span>
           </h2>
           <p className="text-base lg:text-lg">
-            I'm a passionate and creative 21-year-old web developer. My approach is simple: to turn ideas into digital experiences. I constantly seek exciting challenges.
+            I&apos;m a passionate and creative 21-year-old web developer. My approach is simple: to turn ideas into digital experiences. I constantly seek exciting challenges.
 
-            I love creating elegant and functional websites and applications that enhance people's lives. I believe that technology has the power to change the world, and I'm always eager to learn new tools and technologies to stay up-to-date.
+            I love creating elegant and functional websites and applications that enhance people's lives. I believe that technology has the power to change the world, and I&apos;m always eager to learn new tools and technologies to stay up-to-date.
             <br />
-            I'm excited about what the future holds and I'm always open to new opportunities and collaborations.
+            I&apos;m excited about what the future holds and I&apos;m always open to new opportunities and collaborations.
 
-            Let's talk about how we can work together on your next project!
+            Let&apos;s talk about how we can work together on your next project!
+
           </p>
           <div className="flex flex-row justify-start mt-8 z-20">
             <TabButton
