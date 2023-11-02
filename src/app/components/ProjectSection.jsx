@@ -1,5 +1,5 @@
 "use client";
-import React, {} from "react";
+import React, { } from "react";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 
@@ -55,7 +55,7 @@ const projectsData = [
   },
 ];
 
-const ProjectsSection = () => {
+export default function ProjectsSection() {
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -64,8 +64,11 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+      <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 z-index-100">
+          My Projects
+        </span>
+
       </h2>
       <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
         {projectsData.map((project, index) => (
@@ -73,7 +76,7 @@ const ProjectsSection = () => {
             key={index}
             variants={cardVariants}
             initial="initial"
-            animate= "animate"
+            animate="animate"
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
             <ProjectCard
@@ -91,4 +94,3 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;

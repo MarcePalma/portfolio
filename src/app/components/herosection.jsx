@@ -8,8 +8,9 @@ import ParticlesContainer from "./particles";
 
 export default function HeroSection() {
   return (
+    <>
+    <ParticlesContainer/>
     <section className="lg:py-16">
-      <ParticlesContainer />
       <div className="grid grid-cols-1 sm:grid-cols-12 relative">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -68,6 +69,7 @@ export default function HeroSection() {
           </div>
         </motion.div>
       </div>
-    </section>
+    </section></>
+    
   );
 };
