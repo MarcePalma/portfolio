@@ -5,6 +5,7 @@ import NavLink from './NavLink.jsx'
 import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import MenuOverlay from './MenuOverlay'
+import Image from 'next/image.js'
 
 const navLinks = [
   {
