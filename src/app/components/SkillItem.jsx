@@ -14,48 +14,16 @@ import {
 
 export default function SkillItem(props) {
   const { icon, title } = props;
-  const colorClass = getColorClass(title);
   const borderClass = getBorderClass(title);
 
   return (
-    <section className={`flex items-center mb-2 ${colorClass}`}>
+    <section className={`flex items-center mb-2 text-white`}>
       {icon}
-      <span className={`ml-2 ${colorClass} ${borderClass}`}>{title}</span>
+      <span className={`ml-2 ${borderClass}`}>{title}</span>
     </section>
   );
 }
 
-
-function getColorClass(title) {
-  switch (title) {
-    case 'HTML':
-      return 'text-red-500';
-    case 'CSS':
-      return 'text-blue-500';
-    case 'Tailwind':
-      return 'text-blue-500';
-    case 'JavaScript':
-      return 'text-yellow-500';
-    case 'TypeScript':
-      return 'text-blue-500'; 
-    case 'React':
-      return 'text-blue-400';
-    case 'NextJS':
-      return 'text-white';
-    case 'NodeJs':
-      return 'text-green-500';
-    case 'Bases De Datos':
-      return 'text-blue-500';
-    case 'Prisma':
-      return 'text-blue-500';
-    case 'Iniciacion al Desarrollo WEB con JavaScript':
-      return 'text-white';
-    case 'Desarrollo WEB con NextJS':
-      return 'text-white';
-    default:
-      return 'text-gray-500';
-  }
-}
 
 
 function getBorderClass(title) {

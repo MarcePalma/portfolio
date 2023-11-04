@@ -49,7 +49,7 @@ function replaceKeywordsWithIcons(description) {
   const iconMap = {
     'CSS': <CSSIcon />,
     'HTML': <HTMLIcon />,
-    'Javascript': <JavascriptIcon />,
+    'JavaScript': <JavascriptIcon />,
     'React': <ReactIcon />,
     'TypeScript': <TypeScriptIcon />,
     'NextJS': <NextJSIcon />,

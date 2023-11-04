@@ -23,7 +23,7 @@ const projectsData = [
   {
     id: 3,
     title: "Weather App",
-    description: "Project",
+    description: "HTML CSS JavaScript",
     image: "/images/projects/weather-app.webp",
     gitUrl: "https://weather-app-marcepalma.vercel.app/",
     previewUrl: "/",
