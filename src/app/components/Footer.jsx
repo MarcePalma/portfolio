@@ -10,10 +10,12 @@ export default function Footer() {
                     href={"/"}
                     className="text-2xl md:text-5xl"
                 >
-                    <Image width={70}
+                    <Image
+                        width={70}
                         height={70}
-                        src="/images/logo.png"
-                        alt="Logo Image" />
+                        src="/images/LOGO.png"
+                        alt="Logo"
+                    />
                 </Link>
             </div>
         </footer>

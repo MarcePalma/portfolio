@@ -3,22 +3,22 @@ import React from 'react'
 import Link from 'next/link'
 import NavLink from './NavLink.jsx'
 import { useState } from 'react'
-import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/solid'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import MenuOverlay from './MenuOverlay'
 
 const navLinks = [
-    {
-        title:'About',
-        path:'#about',
-    },
-    {
-        title:'Projects',
-        path:'#projects',
-    },
-    {
-        title:'Contact',
-        path:'#contact',
-    }
+  {
+    title: 'About',
+    path: '#about',
+  },
+  {
+    title: 'Projects',
+    path: '#projects',
+  },
+  {
+    title: 'Contact',
+    path: '#contact',
+  }
 ]
 
 
@@ -26,7 +26,7 @@ const navLinks = [
 
 export default function Navbar() {
 
-    const [navbarOpen, setNavbarOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
@@ -35,11 +35,12 @@ export default function Navbar() {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          <img 
-          width={70}
-          height={70}
-          src="/images/logo.png" 
-          alt="Logo Image" />
+          <Image 
+            width={70}
+            height={70}
+            src="/images/LOGO.png"
+            alt="Logo"
+          />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
