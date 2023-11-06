@@ -1,6 +1,11 @@
 import React from 'react'
 import NavLink from './NavLink'
 
+const links = [
+  { path: '#projects', title: 'Projects' },
+  { path: '#about', title: 'About' },
+  { path: '#contact', title: 'Contact' },
+];
 
 export default function MenuOverlay() {
   return (

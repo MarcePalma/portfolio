@@ -46,8 +46,8 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Music Player",
-    description: 'music player with spotify api',
+    title: "Blog",
+    description: 'NextJS TypeScript Tailwind',
     image: "/images/projects/1.png",
     gitUrl: "/",
     previewUrl: "/",
