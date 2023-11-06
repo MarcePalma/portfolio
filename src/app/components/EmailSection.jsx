@@ -121,7 +121,7 @@ export default function EmailSection() {
                         </div>
                         <button
                             type="submit"
-                            className="bg-gradient-to=r from-blue-400 to-red-600 hover:bg-red-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+                            className="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
                         >
                             Send Message
                         </button>

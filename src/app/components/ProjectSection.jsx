@@ -30,8 +30,8 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Recipes App",
-    description: "Food Recipes app, NextJs",
+    title: "Canvas Game",
+    description: "HTML CSS JavaScript",
     image: "/images/projects/4.png",
     gitUrl: "/",
     previewUrl: "/",
