@@ -10,22 +10,22 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-<section className="grid grid-cols-2 md:grid-cols-5 gap-4">
-  <ul className="space-y-4 space-4-x">
-    <SkillItem title="HTML" icon={<HTMLIcon />} />
-    <SkillItem title="CSS" icon={<CSSIcon />} />
-    <SkillItem title="Tailwind" icon={<TailwindIcon />} />
-    <SkillItem title="JavaScript" icon={<JavascriptIcon />} />
-    <SkillItem title="TypeScript" icon={<TypeScriptIcon />} />
-  </ul>
-  <ul className="space-y-4 space-4-x">
-    <SkillItem title="React" icon={<ReactIcon />} />
-    <SkillItem title="NextJS" icon={<NextJSIcon />} />
-    <SkillItem title="NodeJs" icon={<NodeJSIcon />} />
-    <SkillItem title="Databases" icon={<DatabasesIcon />} />
-    <SkillItem title="Prisma" icon={<PrismaIcon />} />
-  </ul>
-</section>
+      <section className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <ul className="space-y-4 space-4-x">
+          <SkillItem title="HTML" icon={<HTMLIcon />} />
+          <SkillItem title="CSS" icon={<CSSIcon />} />
+          <SkillItem title="Tailwind" icon={<TailwindIcon />} />
+          <SkillItem title="JavaScript" icon={<JavascriptIcon />} />
+          <SkillItem title="TypeScript" icon={<TypeScriptIcon />} />
+        </ul>
+        <ul className="space-y-4 space-4-x">
+          <SkillItem title="React" icon={<ReactIcon />} />
+          <SkillItem title="NextJS" icon={<NextJSIcon />} />
+          <SkillItem title="NodeJs" icon={<NodeJSIcon />} />
+          <SkillItem title="Databases" icon={<DatabasesIcon />} />
+          <SkillItem title="Prisma" icon={<PrismaIcon />} />
+        </ul>
+      </section>
 
 
     ),
@@ -124,6 +124,7 @@ export default function AboutSection() {
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
+
         </div>
       </div>
     </section>

@@ -121,10 +121,11 @@ export default function EmailSection() {
                         </div>
                         <button
                             type="submit"
-                            className="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
+                            className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-400 to-pink-600 bg-white hover-bg-slate-200 text-white"
                         >
                             Send Message
                         </button>
+
                     </form>
                 )}
             </div>
@@ -132,3 +133,11 @@ export default function EmailSection() {
     );
 };
 
+//<button
+//type="submit"
+//className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to pink-500 hover-bg-slate-800 text-white"
+//>
+//<span className="block bg-[#121212] hover-bg-slate-800 rounded-full px-5 py-2">
+//    Send Message
+//</span>
+//</button>
