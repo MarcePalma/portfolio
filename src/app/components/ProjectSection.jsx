@@ -48,7 +48,7 @@ const projectsData = [
     id: 6,
     title: "Blog",
     description: 'NextJS TypeScript Tailwind',
-    image: "/images/projects/1.png",
+    image: "/images/projects/blog.webp",
     gitUrl: "/",
     previewUrl: "/",
   },
