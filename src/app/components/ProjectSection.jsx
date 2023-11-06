@@ -32,7 +32,7 @@ const projectsData = [
     id: 4,
     title: "Canvas Game",
     description: "HTML CSS JavaScript",
-    image: "/images/projects/4.png",
+    image: "/images/projects/Canvas-game.webp",
     gitUrl: "/",
     previewUrl: "/",
   },
