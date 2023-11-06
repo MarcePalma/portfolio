@@ -39,7 +39,7 @@ const projectsData = [
   {
     id: 5,
     title: "Chat",
-    description: "Chat app, NextJs",
+    description: "NextJS TypeScript Tailwind",
     image: "/images/projects/5.png",
     gitUrl: "/",
     previewUrl: "/",
