@@ -121,23 +121,13 @@ export default function EmailSection() {
                         </div>
                         <button
                             type="submit"
-                            className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-400 to-pink-600 bg-white hover-bg-slate-200 text-white"
+                            className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
                         >
                             Send Message
                         </button>
-
                     </form>
                 )}
-            </div>
-        </section>
+        </div>
+        </section >
     );
 };
-
-//<button
-//type="submit"
-//className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to pink-500 hover-bg-slate-800 text-white"
-//>
-//<span className="block bg-[#121212] hover-bg-slate-800 rounded-full px-5 py-2">
-//    Send Message
-//</span>
-//</button>
