@@ -9,7 +9,7 @@ const projectsData = [
     title: "OkToCall",
     description: "NextJS TypeScript Tailwind",
     image: "/images/projects/OkToCall.webp",
-    gitUrl: "/",
+    gitUrl: "https://github.com/OktoCall/oktocall",
     previewUrl: "/",
   },
   {
@@ -26,15 +26,15 @@ const projectsData = [
     description: "HTML CSS JavaScript",
     image: "/images/projects/weather-app.webp",
     gitUrl: "https://weather-app-marcepalma.vercel.app/",
-    previewUrl: "/",
+    previewUrl: "https://weatherapp32.vercel.app/",
   },
   {
     id: 4,
     title: "Canvas Game",
     description: "HTML CSS JavaScript",
     image: "/images/projects/Canvas-game.webp",
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/MarcePalma/Canvas-Game",
+    previewUrl: "https://canvas-game-lilac.vercel.app/",
   },
   {
     id: 5,
@@ -47,10 +47,10 @@ const projectsData = [
   {
     id: 6,
     title: "Blog",
-    description: 'NextJS TypeScript Tailwind',
+    description: "NextJS TypeScript Tailwind",
     image: "/images/projects/Blog.webp",
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/MarcePalma/blog",
+    previewUrl: "https://blog-eight-ruddy-60.vercel.app/",
   },
 ];
 
