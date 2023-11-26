@@ -14,13 +14,13 @@ export default function StarsParticles() {
     return (
       <Particles
         className='h-full w-full absolute translate-z-0'
-        id="tsparticles"
+        id="starsParticles"
         init={particlesIn}
         loaded={particlesLoad}
         options={{
           fullScreen: { enable: false },
           background: {
-            enable: true,
+            enable: false,
           },
           particles: {
             number: {

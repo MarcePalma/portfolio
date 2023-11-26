@@ -3,14 +3,14 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
-import { LinkParticles } from "./Particles/LinkParticles.jsx";
+import StarsParticles from "./Particles/StarsParticles.jsx";
 
 
 
 export default function HeroSection() {
   return (
     <section className="lg:py-16 relative overflow-hidden">
-      <LinkParticles />
+      <StarsParticles />
       <article className="grid grid-cols-1 sm:grid-cols-12 relative">
         <div className="col-span-12 sm:col-span-8 place-self-center text-center sm:text-left justify-self-start">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">

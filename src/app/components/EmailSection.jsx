@@ -4,6 +4,7 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import FireWorksParticles from "./Particles/FireWorksParticles";
 
 export default function EmailSection() {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -34,7 +35,6 @@ export default function EmailSection() {
         const resData = await response.json();
 
         if (response.status === 200) {
-            console.log("Message sent.");
             setEmailSubmitted(true);
         }
     };
@@ -42,10 +42,10 @@ export default function EmailSection() {
     return (
         <section
             id="contact"
-            className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+            className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative overflow-hidden"
         >
             <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-            <div className="z-1">
+            <div className="z-10 relative">
                 <h5 className="text-xl font-bold my-2">
                     <span className="bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 text-transparent">
                         Let&apos;s Connect
@@ -68,9 +68,13 @@ export default function EmailSection() {
             </div>
             <div>
                 {emailSubmitted ? (
-                    <p className="text-green-500 text-sm mt-2">
-                        Email sent successfully!
-                    </p>
+                    <section className="z-10 absolute top-0 left-0 right-0 bottom-0">
+                        <FireWorksParticles className="z-0" />
+                        <p className="text-green-500 text-sm mt-2">
+                            Email sent successfully!
+                        </p>
+                    </section>
+
                 ) : (
                     <form className="flex flex-col" onSubmit={handleSubmit}>
                         <div className="mb-6">
@@ -127,7 +131,7 @@ export default function EmailSection() {
                         </button>
                     </form>
                 )}
-        </div>
+            </div>
         </section >
     );
 };

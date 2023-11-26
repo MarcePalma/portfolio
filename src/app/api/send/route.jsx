@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import Image from "next/image";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
@@ -13,17 +14,17 @@ export async function POST(req, res) {
       from: fromEmail,
       to: [toEmail, email],
       subject: subject,
-      react: (
-        <>
-          <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
-          <p>New message submitted:</p>
-          <p>{message}</p>
-        </>
-      ),
+      react: <>
+        <h1>{subject}</h1>
+        <p>Thank you for contacting me!</p>
+        <p>New message submitted:</p>
+        <p>{message}</p>
+        <p>I &apos;ll try to reach you as soon as possible</p>
+      </>,
     });
     return NextResponse.json(data);
   } catch (error) {
-    return NextResponse.json({ error });
+    console.error("Error sending email:", error);
+    return NextResponse.json({ error: "Error sending email." });
   }
 }
