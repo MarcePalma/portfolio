@@ -70,10 +70,10 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.49.0.tgz"
   integrity sha512-1S8uAY/MTJqVx0SC4epBq+N2yhuwtNwLbJYNZyhL2pO1ZVKn5HFXav5T41Ryzy9K9V7ZId2JB2oy/W4aCd9/2w==
 
-"@heroicons/react@^2.0.18":
-  version "2.0.18"
-  resolved "https://registry.npmjs.org/@heroicons/react/-/react-2.0.18.tgz"
-  integrity sha512-7TyMjRrZZMBPa+/5Y8lN0iyvUU/01PeMGX2+RE7cQWpEUIcb4QotzUObFkJDejj/HUH4qjP/eQ0gzzKs2f+6Yw==
+"@heroicons/react@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.2.tgz#814985c245ce52ce4980eb559fa3deaea8ab8d16"
+  integrity sha512-QhjjFcgq4Xsa1X+k/OBl/Mt6ean5XlDA/Lg5hS852+Cc8rOyBsSoTZt+BXhM7kKUpL90S3Jm9lzRfeG1WxQACw==
 
 "@humanwhocodes/config-array@^0.11.11":
   version "0.11.11"

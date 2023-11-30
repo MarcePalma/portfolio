@@ -59,7 +59,7 @@ export function PrismaIcon() {
     )
 }
 
-export function DatabasesIcon() {
+export function MySQLIcon() {
     return (
         <svg
             width="32"
@@ -245,5 +245,95 @@ export function SpotifyIcon() {
             <path d="M9 15c1.5 -1 4 -1 5 .5" />
             <path d="M7 9c2 -1 6 -2 10 .5" />
         </svg>
+    )
+}
+
+export function ApiIcon() {
+    return (
+        <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="#00bfd8"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 13h5" />
+            <path d="M12 16v-8h3a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-3" />
+            <path d="M20 8v8" />
+            <path d="M9 16v-5.5a2.5 2.5 0 0 0 -5 0v5.5" />
+        </svg>
+    )
+}
+
+export function MongoDBIcon() {
+    return (
+        <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="#00b341"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 3v19" />
+            <path d="M18 11.227c0 3.273 -1.812 4.77 -6 9.273c-4.188 -4.503 -6 -6 -6 -9.273c0 -4.454 3.071 -6.927 6 -9.227c2.929 2.3 6 4.773 6 9.227z" />
+        </svg>
+    )
+}
+
+export function Firebase() {
+    return (
+        <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="#ff4500"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4.53 17.05l6.15 -11.72h-.02c.38 -.74 1.28 -1.02 2.01 -.63c.26 .14 .48 .36 .62 .62l1.06 2.01" />
+            <path d="M15.47 6.45c.58 -.59 1.53 -.59 2.11 -.01c.22 .22 .36 .5 .41 .81l1.5 9.11c.1 .62 -.2 1.24 -.76 1.54l-6.07 2.9c-.46 .25 -1.01 .26 -1.46 0l-6.02 -2.92c-.55 -.31 -.85 -.92 -.75 -1.54l1.96 -12.04c.12 -.82 .89 -1.38 1.7 -1.25c.46 .07 .87 .36 1.09 .77l1.24 1.76" />
+            <path d="M4.57 17.18l10.93 -10.68" />
+        </svg>
+    )
+}
+
+export function ChevronLeftIcon() {
+    return (
+        <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-10 h-10">
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+
+    )
+}
+export function ChevronRightIcon() {
+    return (
+        <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-10 h-10">
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+
     )
 }

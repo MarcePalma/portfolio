@@ -1,1 +1,1 @@
-export const regex = /\b(HTML|CSS|Tailwind|JavaScript|TypeScript|React|NextJS|NodeJs|Bases|Prisma|Spotify)\b/g;
+export const regex = /\b(HTML|CSS|Tailwind|JavaScript|TypeScript|React|NextJS|NodeJs|Bases|Prisma|Spotify|API)\b/g;

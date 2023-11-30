@@ -37,7 +37,7 @@ export default function HeroSection() {
           </p>
           <div>
             <Link
-              href="/contact"
+              href="#contact"
               className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-400 to-pink-600 bg-white hover-bg-slate-200 text-white"
             >
               Hire Me

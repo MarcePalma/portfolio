@@ -4,7 +4,7 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 import SkillItem from "./SkillItem";
 import StarsParticles from "./Particles/StarsParticles";
-import { ReactIcon, UTNIcon, DatabasesIcon, HTMLIcon, CSSIcon, TailwindIcon, JavascriptIcon, TypeScriptIcon, NextJSIcon, NodeJSIcon, PrismaIcon, CertificationIcon } from "../utils/skills/constSkills";
+import { ReactIcon, UTNIcon, HTMLIcon, CSSIcon, TailwindIcon, JavascriptIcon, TypeScriptIcon, NextJSIcon, NodeJSIcon, PrismaIcon, CertificationIcon, MySQLIcon, MongoDBIcon, Firebase } from "../utils/skills/constSkills";
 const TAB_DATA = [
   {
     title: "Skills",
@@ -17,13 +17,15 @@ const TAB_DATA = [
           <SkillItem title="Tailwind" icon={<TailwindIcon />} />
           <SkillItem title="JavaScript" icon={<JavascriptIcon />} />
           <SkillItem title="TypeScript" icon={<TypeScriptIcon />} />
+          <SkillItem title="Firebase" icon={<Firebase />} />
         </ul>
         <ul className="space-y-4 space-4-x">
           <SkillItem title="React" icon={<ReactIcon />} />
           <SkillItem title="NextJS" icon={<NextJSIcon />} />
           <SkillItem title="NodeJs" icon={<NodeJSIcon />} />
-          <SkillItem title="Databases" icon={<DatabasesIcon />} />
+          <SkillItem title="MySQL" icon={<MySQLIcon />} />
           <SkillItem title="Prisma" icon={<PrismaIcon />} />
+          <SkillItem title="MongoDB" icon={<MongoDBIcon />} />
         </ul>
       </section>
 

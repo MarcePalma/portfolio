@@ -10,9 +10,10 @@ import {
   ReactIcon,
   NextJSIcon,
   NodeJSIcon,
-  DatabasesIcon,
+  MySQLIcon,
   PrismaIcon,
   SpotifyIcon,
+  ApiIcon,
 } from "../utils/skills/constSkills";
 import { regex } from "../utils/regex/regex";
 
@@ -35,11 +36,13 @@ function renderIcon(iconName) {
     case 'NodeJS':
       return <NodeJSIcon />;
     case 'Bases De Datos':
-      return <DatabasesIcon />;
+      return <MySQLIcon />;
     case 'Prisma':
       return <PrismaIcon />;
     case 'Spotify':
       return <SpotifyIcon />;
+    case 'API':
+      return <ApiIcon />;
     default:
       return null;
   }
@@ -55,9 +58,10 @@ function replaceKeywordsWithIcons(description) {
     'NextJS': <NextJSIcon />,
     'Tailwind': <TailwindIcon />,
     'NodeJS': <NodeJSIcon />,
-    'Bases De Datos': <DatabasesIcon />,
+    'MySQL': <MySQLIcon />,
     'Prisma': <PrismaIcon />,
-    'Spotify': <SpotifyIcon />
+    'Spotify': <SpotifyIcon />,
+    'API': <ApiIcon />,
   };
 
 
@@ -70,7 +74,7 @@ function replaceKeywordsWithIcons(description) {
       return <span key={index}>{part}</span>;
     }
   });
-  
+
 }
 
 export default function ProjectCard({ imgUrl, title, description, gitUrl, previewUrl }) {

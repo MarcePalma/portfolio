@@ -1,7 +1,8 @@
 "use client";
-import React, { } from "react";
+import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
+import { ChevronLeftIcon, ChevronRightIcon } from "../utils/skills/constSkills";
 
 const projectsData = [
   {
@@ -23,7 +24,7 @@ const projectsData = [
   {
     id: 3,
     title: "Weather App",
-    description: "HTML CSS JavaScript",
+    description: "HTML CSS JavaScript API",
     image: "/images/projects/weather-app.webp",
     gitUrl: "https://weather-app-marcepalma.vercel.app/",
     previewUrl: "https://weatherapp32.vercel.app/",
@@ -39,7 +40,7 @@ const projectsData = [
   {
     id: 5,
     title: "Chat",
-    description: "NextJS TypeScript Tailwind",
+    description: "NextJS TypeScript Tailwind Prisma",
     image: "/images/projects/5.png",
     gitUrl: "/",
     previewUrl: "/",
@@ -47,30 +48,58 @@ const projectsData = [
   {
     id: 6,
     title: "Blog",
-    description: "NextJS TypeScript Tailwind",
+    description: "NextJS TypeScript Tailwind Prisma",
     image: "/images/projects/Blog.webp",
     gitUrl: "https://github.com/MarcePalma/blog",
     previewUrl: "https://blog-eight-ruddy-60.vercel.app/",
   },
+  {
+    id: 7,
+    title: "Tienda Shopix",
+    description: "NextJS TypeScript Tailwind Prisma",
+    image: "/images/projects/Shopix.webp",
+    gitUrl: "https://github.com/MarcePalma/e-commerce-semiparcial",
+    previewUrl: "https://e-commerce-semiparcial.vercel.app/",
+  }
 ];
 
 export default function ProjectsSection() {
+  const [carouselPosition, setCarouselPosition] = useState(0);
+  const projectsPerPage = 6; // Número de proyectos a mostrar por página
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
 
+  const handleNextClick = () => {
+    const nextPosition = carouselPosition + projectsPerPage;
+    if (nextPosition < projectsData.length) {
+      setCarouselPosition(nextPosition);
+    }
+  };
+
+  const handlePrevClick = () => {
+    const prevPosition = carouselPosition - projectsPerPage;
+    if (prevPosition >= 0) {
+      setCarouselPosition(prevPosition);
+    }
+  };
+
+  const visibleProjects = projectsData.slice(
+    carouselPosition,
+    carouselPosition + projectsPerPage
+  );
+
   return (
-    <section id="projects">
+    <section id="projects" className="relative">
       <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 z-index-100">
           My Projects
         </span>
-
       </h2>
-      <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {projectsData.map((project, index) => (
+      <ul className="grid md:grid-cols-3 gap-8 md:gap-12 relative">
+        {visibleProjects.map((project, index) => (
           <motion.li
             key={index}
             variants={cardVariants}
@@ -88,8 +117,21 @@ export default function ProjectsSection() {
             />
           </motion.li>
         ))}
+        <div className="absolute top-1/2 transform -translate-y-1/2 left-[-2rem]">
+          {carouselPosition > 0 && (
+            <button onClick={handlePrevClick}>
+              <ChevronLeftIcon className="h-8 w-8" />
+            </button>
+          )}
+        </div>
+        <div className="absolute top-1/2 transform -translate-y-1/2 right-[-4rem]">
+          {carouselPosition + projectsPerPage < projectsData.length && (
+            <button onClick={handleNextClick}>
+              <ChevronRightIcon className="h-20  w-20" />
+            </button>
+          )}
+        </div>
       </ul>
     </section>
   );
-};
-
+}
