@@ -1,4 +1,9 @@
 {
+    "navbar": {
+        "about": "About",
+        "project": "Project",
+        "contact": "Contact"
+    },
     "herosection": {
         "greeting": "Hello, I'm",
         "name": "Marce",
@@ -11,10 +16,9 @@
     "achievementsection": {
         "Years": "Years",
         "Projects": "Projects"
-        
     },
-    "projectsection":{
-        "title":"My Projects"
+    "projectsection": {
+        "title": "My Projects"
     },
     "aboutmesection": {
         "title": "About Me",

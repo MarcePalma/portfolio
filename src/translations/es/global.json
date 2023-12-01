@@ -1,4 +1,9 @@
 {
+    "navbar":{
+        "about":"Sobre Mi",
+        "project":"Proyectos",
+        "contact":"Contacto"
+    },    
     "herosection": {
         "greeting": "Hola, Soy",
         "name": "Marce",

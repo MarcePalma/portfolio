@@ -7,24 +7,28 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay';
 import Image from 'next/image.js';
 import LanguageSwitcher from './LanguageSwitcher'; // Importa el nuevo componente
+import { useTranslation } from 'react-i18next';
 
-const navLinks = [
-  {
-    title: 'About',
-    path: '#about',
-  },
-  {
-    title: 'Projects',
-    path: '#projects',
-  },
-  {
-    title: 'Contact',
-    path: '#contact',
-  },
-];
+
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const { t } = useTranslation("global");
+
+  const navLinks = [
+    {
+      title: `${t("navbar.about")}`,
+      path: '#about',
+    },
+    {
+      title: `${t("navbar.project")}`,
+      path: '#projects',
+    },
+    {
+      title: `${t("navbar.contact")}`,
+      path: '#contact',
+    },
+  ];
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
@@ -32,7 +36,7 @@ export default function Navbar() {
         <Link href={'/'} className="text-2xl md:text-5xl text-white font-semibold">
           <Image width={70} height={70} src="/images/LOGO.webp" alt="Logo" />
         </Link>
-        
+
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -62,7 +66,7 @@ export default function Navbar() {
       </div>
       <LanguageSwitcher />
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
-      
+
     </nav>
   );
 }
