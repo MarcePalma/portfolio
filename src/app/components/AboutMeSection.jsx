@@ -114,7 +114,7 @@ export default function AboutSection() {
               />
               <TabButton
                 selectTab={() => handleTabChange("certifications")}
-                active={tab === "eertifications"}
+                active={tab === "certifications"}
                 translationKey="aboutmesection.certifications"
               />
             </div>

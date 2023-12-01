@@ -27,14 +27,14 @@
         "aboutmedescription": "Soy un apasionado y creativo desarrollador web de 21 años. Mi enfoque es simple: convertir ideas en experiencias digitales. Siempre busco desafíos emocionantes. Me encanta crear sitios web y aplicaciones elegantes y funcionales que mejoren la vida de las personas. Creo que la tecnología tiene el poder de cambiar el mundo y siempre estoy ansioso por aprender nuevas herramientas y tecnologías para estar actualizado. Estoy emocionado por lo que depara el futuro y siempre estoy abierto a nuevas oportunidades y colaboraciones. ¡Hablemos sobre cómo podemos trabajar juntos en tu próximo proyecto!",
         "excitedfuture": "Estoy emocionado por lo que depara el futuro y siempre estoy abierto a nuevas oportunidades y colaboraciones."
     },
-    "emailsection":
+    "emailSection":
     {
-        "Let's Connect": "Conéctemonos",
-        "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!": "Actualmente estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está abierta. Ya sea que tengas una pregunta o simplemente quieras saludar, haré todo lo posible por responderte.",
-        "Your email": "Tu correo electrónico",
-        "Subject": "Asunto",
-        "Message": "Mensaje",
-        "Email sent successfully!": "¡Correo electrónico enviado exitosamente!",
-        "Send Message": "Enviar Mensaje"
+        "let's connect": "Conéctemonos",
+        "opento": "Actualmente estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está abierta. Ya sea que tengas una pregunta o simplemente quieras saludar, haré todo lo posible por responderte.",
+        "youremail": "Tu correo electrónico",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "emailsent": "¡Correo electrónico enviado exitosamente!",
+        "sendmessage": "Enviar Mensaje"
       }
 }

@@ -8,7 +8,7 @@ import FireWorksParticles from "./Particles/FireWorksParticles";
 import { useTranslation } from "react-i18next";
 
 export default function EmailSection() {
-    const { t } = useTranslation();
+    const { t } = useTranslation("global");
     const [emailSubmitted, setEmailSubmitted] = useState(false);
 
     const handleSubmit = async (e) => {
@@ -50,12 +50,12 @@ export default function EmailSection() {
             <div className="relative">
                 <h5 className="text-xl font-bold my-2">
                     <span className="bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 text-transparent">
-                        {t("Let's Connect")}
+                        {t("emailSection.let's connect")}
                     </span>
                 </h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
                     {" "}
-                    {t("I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!")}
+                    {t("emailSection.opento")}
                 </p>
                 <div className="socials flex flex-row gap-2">
                     <Link href="https://github.com/MarcePalma">
@@ -81,7 +81,7 @@ export default function EmailSection() {
                                 htmlFor="email"
                                 className="text-white block mb-2 text-sm font-medium"
                             >
-                                {t('Your email')}
+                                {t('emailSection.youremail')}
                             </label>
                             <input
                                 name="email"
@@ -97,7 +97,7 @@ export default function EmailSection() {
                                 htmlFor="subject"
                                 className="text-white block text-sm mb-2 font-medium"
                             >
-                                {t('Subject')}
+                                {t('emailSection.subject')}
                             </label>
                             <input
                                 name="subject"
@@ -113,7 +113,7 @@ export default function EmailSection() {
                                 htmlFor="message"
                                 className="text-white block text-sm mb-2 font-medium"
                             >
-                                {t('Message')}
+                                {t('emailSection.message')}
                             </label>
                             <textarea
                                 name="message"
@@ -126,7 +126,7 @@ export default function EmailSection() {
                             type="submit"
                             className="bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 text-transparent font-medium py-2.5 px-5 rounded-lg w-full border-pink-500"
                         >
-                            {t('Send Message')}
+                            {t('emailSection.sendmessage')}
                         </button>
                     </form>
                 )}
