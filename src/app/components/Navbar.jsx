@@ -32,7 +32,7 @@ export default function Navbar() {
         <Link href={'/'} className="text-2xl md:text-5xl text-white font-semibold">
           <Image width={70} height={70} src="/images/LOGO.webp" alt="Logo" />
         </Link>
-        <LanguageSwitcher />
+        
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -60,7 +60,9 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
+      <LanguageSwitcher />
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      
     </nav>
   );
 }

@@ -9,7 +9,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <section className='flex px-4 py-4 gap-2 absolute right-10'>
+    <section className='flex px-4 py-4 gap-2 fixed right-20 border-slate-200'>
       <button onClick={() => changeLanguage('en')} className='text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-white'>EN</button>
       <button onClick={() => changeLanguage('es')} className='text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-300'>ES</button>
     </section>

@@ -70,9 +70,7 @@ export default function EmailSection() {
                 {emailSubmitted ? (
                     <section className="z-10 absolute top-0 left-0 right-0 bottom-0">
                         <FireWorksParticles className="z-0" />
-                        <p className="text-green-500 text-sm mt-2">
-                            {t('Email sent successfully!')}
-                        </p>
+                    <Image className="fixed left-0 bottom-0 z-0" src={"/images/cats/gatito3.gif"} width={100} height={600} alt="gatitos-gif"/>
                     </section>
                 ) : (
                     <form className="flex flex-col" onSubmit={handleSubmit}>

@@ -58,7 +58,7 @@ const projectsData = [
     id: 7,
     title: "Tienda Shopix",
     description: "NextJS TypeScript Tailwind Prisma",
-    image: "/images/projects/Shopix.webp",
+    image: "/images/projects/tienda-shopix.webp",
     gitUrl: "https://github.com/MarcePalma/e-commerce-semiparcial",
     previewUrl: "https://e-commerce-semiparcial.vercel.app/",
   }
