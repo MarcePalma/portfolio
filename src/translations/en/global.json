@@ -1,0 +1,40 @@
+{
+    "herosection": {
+        "greeting": "Hello, I'm",
+        "name": "Marce",
+        "role": "Web Developer",
+        "additionalRole": "a Gamer",
+        "description": "Full Stack web developer 21 years old. Transforming ideas into reality.",
+        "hireMe": "Hire Me",
+        "downloadCV": "Download CV"
+    },
+    "achievementsection": {
+        "Years": "Years",
+        "Projects": "Projects"
+        
+    },
+    "projectsection":{
+        "title":"My Projects"
+    },
+    "aboutmesection": {
+        "title": "About Me",
+        "skills": "Skills",
+        "education": "Education",
+        "certifications": "Certifications",
+        "utntitle": "Universidad Tecnológica Nacional UTN FRMDP",
+        "webdevelopmentinitiation": "Web Development Initiation with JavaScript",
+        "nextjswebdevelopment": "Web Development with NextJS",
+        "aboutme": "About Me",
+        "aboutmedescription": "I'm a passionate and creative 21-year-old web developer. My approach is simple: turn ideas into digital experiences. I constantly seek exciting challenges. I love creating elegant and functional websites and applications that enhance people's lives. I believe that technology has the power to change the world, and I'm always eager to learn new tools and technologies to stay up-to-date. I'm excited about what the future holds and I'm always open to new opportunities and collaborations. Let's talk about how we can work together on your next project!",
+        "excitedfuture": "I'm excited about what the future holds and I'm always open to new opportunities and collaborations."
+    },
+    "emailSection": {
+        "let's connect": "Let's Connect",
+        "opento": "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+        "youremail": "Your email",
+        "subject": "Subject",
+        "message": "Message",
+        "emailsent": "Email sent successfully!",
+        "sendmessage": "Send Message"
+    }
+}

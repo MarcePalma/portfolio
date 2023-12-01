@@ -5,8 +5,10 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 import FireWorksParticles from "./Particles/FireWorksParticles";
+import { useTranslation } from "react-i18next";
 
 export default function EmailSection() {
+    const { t } = useTranslation();
     const [emailSubmitted, setEmailSubmitted] = useState(false);
 
     const handleSubmit = async (e) => {
@@ -48,14 +50,12 @@ export default function EmailSection() {
             <div className="relative">
                 <h5 className="text-xl font-bold my-2">
                     <span className="bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 text-transparent">
-                        Let&apos;s Connect
+                        {t("Let's Connect")}
                     </span>
                 </h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
                     {" "}
-                    I&apos;m currently looking for new opportunities, my inbox is always
-                    open. Whether you have a question or just want to say hi, I&apos;ll
-                    try my best to get back to you!
+                    {t("I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!")}
                 </p>
                 <div className="socials flex flex-row gap-2">
                     <Link href="https://github.com/MarcePalma">
@@ -71,10 +71,9 @@ export default function EmailSection() {
                     <section className="z-10 absolute top-0 left-0 right-0 bottom-0">
                         <FireWorksParticles className="z-0" />
                         <p className="text-green-500 text-sm mt-2">
-                            Email sent successfully!
+                            {t('Email sent successfully!')}
                         </p>
                     </section>
-
                 ) : (
                     <form className="flex flex-col" onSubmit={handleSubmit}>
                         <div className="mb-6">
@@ -82,7 +81,7 @@ export default function EmailSection() {
                                 htmlFor="email"
                                 className="text-white block mb-2 text-sm font-medium"
                             >
-                                Your email
+                                {t('Your email')}
                             </label>
                             <input
                                 name="email"
@@ -98,7 +97,7 @@ export default function EmailSection() {
                                 htmlFor="subject"
                                 className="text-white block text-sm mb-2 font-medium"
                             >
-                                Subject
+                                {t('Subject')}
                             </label>
                             <input
                                 name="subject"
@@ -114,7 +113,7 @@ export default function EmailSection() {
                                 htmlFor="message"
                                 className="text-white block text-sm mb-2 font-medium"
                             >
-                                Message
+                                {t('Message')}
                             </label>
                             <textarea
                                 name="message"
@@ -127,11 +126,12 @@ export default function EmailSection() {
                             type="submit"
                             className="bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 text-transparent font-medium py-2.5 px-5 rounded-lg w-full border-pink-500"
                         >
-                            Send Message
+                            {t('Send Message')}
                         </button>
                     </form>
                 )}
             </div>
-        </section >
+        </section>
     );
 };
+

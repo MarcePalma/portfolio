@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "../utils/skills/constSkills";
+import { useTranslation } from "react-i18next";
 
 const projectsData = [
   {
@@ -65,7 +66,8 @@ const projectsData = [
 
 export default function ProjectsSection() {
   const [carouselPosition, setCarouselPosition] = useState(0);
-  const projectsPerPage = 6; // Número de proyectos a mostrar por página
+  const projectsPerPage = 6;
+  const { t } = useTranslation("global");
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -95,7 +97,7 @@ export default function ProjectsSection() {
     <section id="projects" className="relative">
       <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 z-index-100">
-          My Projects
+        {t("projectsection.title")}
         </span>
       </h2>
       <ul className="grid md:grid-cols-3 gap-8 md:gap-12 relative">

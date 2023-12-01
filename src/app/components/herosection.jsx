@@ -1,13 +1,14 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 import StarsParticles from "./Particles/StarsParticles.jsx";
-
-
+import { useTranslation } from "react-i18next"
+import LanguageDependentTypeAnimation from "./LanguageDependentTypeAnimation.jsx";
 
 export default function HeroSection() {
+  const { t } = useTranslation("global");
+
   return (
     <section className="lg:py-16 relative overflow-hidden">
       <StarsParticles />
@@ -15,16 +16,16 @@ export default function HeroSection() {
         <div className="col-span-12 sm:col-span-8 place-self-center text-center sm:text-left justify-self-start">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 z-10">
-              Hello, I&apos;m{" "}
+              {t("herosection.greeting")}{" "}
             </span>
             <br />
-            <TypeAnimation
+            <LanguageDependentTypeAnimation
               sequence={[
-                "Marce",
+                t("herosection.name"),
                 1000,
-                "Web Developer",
+                t("herosection.role"),
                 1000,
-                "a Gamer",
+                t("herosection.additionalRole"),
                 1000,
               ]}
               wrapper="span"
@@ -33,17 +34,19 @@ export default function HeroSection() {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Full Stack web developer 21 years old. Transforming ideas into reality.
+            {t("herosection.description")}
           </p>
           <div>
             <Link
               href="#contact"
               className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-400 to-pink-600 bg-white hover-bg-slate-200 text-white"
             >
-              Hire Me
+              {t("herosection.hireMe")}
             </Link>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to pink-500 hover-bg-slate-800 text-white">
-              <span className="block bg-[#121212] hover-bg-slate-800 rounded-full px-5 py-2">Download CV</span>
+              <span className="block bg-[#121212] hover-bg-slate-800 rounded-full px-5 py-2">
+                {t("herosection.downloadCV")}
+              </span>
             </button>
           </div>
         </div>

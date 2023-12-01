@@ -1,11 +1,12 @@
-'use client'
-import React from 'react'
-import Link from 'next/link'
-import NavLink from './NavLink.jsx'
-import { useState } from 'react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
-import MenuOverlay from './MenuOverlay'
-import Image from 'next/image.js'
+'use client';
+import React from 'react';
+import Link from 'next/link';
+import NavLink from './NavLink.jsx';
+import { useState } from 'react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import MenuOverlay from './MenuOverlay';
+import Image from 'next/image.js';
+import LanguageSwitcher from './LanguageSwitcher'; // Importa el nuevo componente
 
 const navLinks = [
   {
@@ -19,30 +20,19 @@ const navLinks = [
   {
     title: 'Contact',
     path: '#contact',
-  }
-]
-
-
-
+  },
+];
 
 export default function Navbar() {
-
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
-        >
-          <Image 
-            width={70}
-            height={70}
-            src="/images/LOGO.webp"
-            alt="Logo"
-          />
+        <Link href={'/'} className="text-2xl md:text-5xl text-white font-semibold">
+          <Image width={70} height={70} src="/images/LOGO.webp" alt="Logo" />
         </Link>
+        <LanguageSwitcher /> {/* Agrega el nuevo componente aquí */}
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -73,4 +63,4 @@ export default function Navbar() {
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
-};
+}

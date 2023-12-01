@@ -1,6 +1,8 @@
-"use client";
+'use client'
+
 import React from "react";
 import dynamic from "next/dynamic";
+import { useTranslation } from "react-i18next";
 
 const AnimatedNumbers = dynamic(
   () => {
@@ -22,6 +24,9 @@ const achievementsList = [
 ];
 
 export default function AchievementsSection() {
+  const { t } = useTranslation("global");
+
+
   return (
     <div className="py-8 px-4 xl:gap-10 sm:py-16 xl:px-16">
       <div className="sm:border-[#a0708a] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
@@ -48,11 +53,11 @@ export default function AchievementsSection() {
                 />
                 {achievement.postfix}
               </h2>
-              <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+              <p className="text-[#ADB7BE] text-base">{t(`achievementsection.${achievement.metric}`)}</p>
             </div>
           );
         })}
       </div>
     </div>
   );
-};
+}
