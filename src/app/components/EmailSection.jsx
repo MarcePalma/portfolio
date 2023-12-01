@@ -58,10 +58,10 @@ export default function EmailSection() {
                     {t("emailSection.opento")}
                 </p>
                 <div className="socials flex flex-row gap-2">
-                    <Link href="https://github.com/MarcePalma">
+                    <Link target="_blank" href="https://github.com/MarcePalma">
                         <Image src={GithubIcon} alt="Github Icon" />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/marcelo-palma-6507b926a/">
+                    <Link target="_blank" href="https://www.linkedin.com/in/marcelo-palma-6507b926a/">
                         <Image src={LinkedinIcon} alt="Linkedin Icon" />
                     </Link>
                 </div>
@@ -122,7 +122,7 @@ export default function EmailSection() {
                         </div>
                         <button
                             type="submit"
-                            className="bg-clip-text bg-gradient-to-r from-blue-400 to-red-600 text-transparent font-medium py-2.5 px-5 rounded-lg w-full border-pink-500"
+                            className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
                         >
                             {t('emailSection.sendmessage')}
                         </button>

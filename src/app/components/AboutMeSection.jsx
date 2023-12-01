@@ -23,8 +23,8 @@ export default function AboutSection() {
       title: t("aboutmesection.skills"),
       id: "skills",
       content: (
-        <section className="grid grid-cols-2 md:grid-cols-5 gap-4">
-          <ul className="space-y-4 space-4-x">
+        <section className="grid grid-cols-2 gap-4">
+          <ul className="space-y-4">
             <SkillItem title="HTML" icon={<HTMLIcon />} />
             <SkillItem title="CSS" icon={<CSSIcon />} />
             <SkillItem title="Tailwind" icon={<TailwindIcon />} />
@@ -32,7 +32,7 @@ export default function AboutSection() {
             <SkillItem title="TypeScript" icon={<TypeScriptIcon />} />
             <SkillItem title="Firebase" icon={<Firebase />} />
           </ul>
-          <ul className="space-y-4 space-4-x">
+          <ul className="space-y-4">
             <SkillItem title="React" icon={<ReactIcon />} />
             <SkillItem title="NextJS" icon={<NextJSIcon />} />
             <SkillItem title="NodeJs" icon={<NodeJSIcon />} />
