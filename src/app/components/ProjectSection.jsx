@@ -42,8 +42,8 @@ const projectsData = [
     id: 5,
     title: "Chat",
     description: "NextJS TypeScript Tailwind Prisma",
-    image: "/images/projects/5.png",
-    gitUrl: "/",
+    image: "/images/projects/InProgress.webp",
+    gitUrl: "https://github.com/MarcePalma/chat",
     previewUrl: "/",
   },
   {
