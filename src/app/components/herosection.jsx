@@ -43,11 +43,11 @@ export default function HeroSection() {
             >
               {t("herosection.hireMe")}
             </Link>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to pink-500 hover-bg-slate-800 text-white">
+            <a href="/cv/CV.pdf" download="CV.pdf" className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to pink-500 hover-bg-slate-800 text-white">
               <span className="block bg-[#121212] hover-bg-slate-800 rounded-full px-3 py-1">
                 {t("herosection.downloadCV")}
               </span>
-            </button>
+            </a>
           </div>
         </div>
         <div className="col-span-12 sm:col-span-4 place-self-center mt-4 lg:mt-0">
