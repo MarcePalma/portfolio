@@ -14,9 +14,6 @@ export default function AboutSection() {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
   const { t } = useTranslation("global", { keySeparator: false });
-  console.log("Translated title:", t("aboutmesection.title"));
-  console.log("Translated about me description:", t("aboutmesection.education"));
-
 
   const TAB_DATA = [
     {
