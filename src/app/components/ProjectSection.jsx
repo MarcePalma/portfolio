@@ -8,9 +8,9 @@ import { useTranslation } from "react-i18next";
 const projectsData = [
   {
     id: 1,
-    title: "OkToCall",
-    description: "NextJS TypeScript Tailwind",
-    image: "/images/projects/OkToCall.webp",
+    title: "AstroFrame",
+    description: "NextJS TypeScript JavaScript Tailwind CSS API",
+    image: "/images/projects/AstroFrame.webp",
     gitUrl: "https://github.com/OktoCall/oktocall",
     previewUrl: "/",
   },
