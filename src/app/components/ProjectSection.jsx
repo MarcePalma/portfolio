@@ -11,7 +11,7 @@ const projectsData = [
     title: "AstroFrame",
     description: "NextJS TypeScript JavaScript Tailwind CSS API",
     image: "/images/projects/AstroFrame.webp",
-    gitUrl: "https://github.com/OktoCall/oktocall",
+    gitUrl: "https://github.com/MarcePalma/astroframe",
     previewUrl: "/",
   },
   {
