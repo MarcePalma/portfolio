@@ -12,7 +12,7 @@ const projectsData = [
     description: "NextJS TypeScript JavaScript Tailwind CSS API",
     image: "/images/projects/AstroFrame.webp",
     gitUrl: "https://github.com/MarcePalma/astroframe",
-    previewUrl: "/",
+    previewUrl: "https://astroframe.vercel.app/",
   },
   {
     id: 2,
